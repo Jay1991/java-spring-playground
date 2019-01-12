@@ -7,7 +7,7 @@
 		<title>Spring MVC Demo Home</title>
 	</head>
 	<body>
-		<form action="shout" method="get">
+		<form action="processFormVersionThree" method="get">
 			<label for="name">Name: </label>
 			<input type="text" name="name" id="name" />
 			<button>Submit</button>	
