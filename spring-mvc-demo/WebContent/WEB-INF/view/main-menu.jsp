@@ -5,7 +5,9 @@
 	</head>
 	<body>
 		<h1>It Works!</h1>
-		<a href="hello/showForm">Form</a>
 		<img src="${pageContext.request.contextPath}/resources/img/andre.jpg" />
+		<br />
+		<a href="hello/showForm">Hello Form</a><br />
+		<a href="student/showForm">Student Form</a>
 	</body>
 </html>
