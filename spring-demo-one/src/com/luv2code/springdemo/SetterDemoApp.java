@@ -16,7 +16,25 @@ public class SetterDemoApp {
 		System.out.println(myCoach.getTeam());
 		
 		applicationContext.close();
+		
+		doStuff(new Foo());
 
+	}
+	
+	public static void doStuff(Foo instance) {
+		System.out.println(instance.stuff());
 	}
 
 }
+
+interface FooThing {
+	String stuff();
+}
+
+class Foo implements FooThing {
+	public String stuff() {
+		return "stuff";
+	}
+}
+
+class Bar extends Foo { }
