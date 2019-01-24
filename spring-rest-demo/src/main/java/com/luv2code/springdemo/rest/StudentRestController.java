@@ -57,14 +57,4 @@ public class StudentRestController {
 		
 		return new ResponseEntity<>(response, HttpStatus.NOT_FOUND);
 	}
-	
-	@ExceptionHandler
-	public ResponseEntity<StudentErrorResponse> handleException(Exception e) {
-		var response = new StudentErrorResponse();
-		response.setMessage("Something went wrong!");
-		response.setStatus(400);
-		response.setTimestamp(System.currentTimeMillis());
-		
-		return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
-	}
 }
