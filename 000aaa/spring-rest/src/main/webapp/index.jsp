@@ -3,9 +3,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Spring REST Demo</title>
+	<title>Just a web application</title>
 </head>
 <body>
-	Hello! :D
+	:)
 </body>
 </html>

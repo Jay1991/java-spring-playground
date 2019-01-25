@@ -17,7 +17,6 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
@@ -26,7 +25,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @EnableTransactionManagement
 @EnableWebMvc
 @PropertySource({ "classpath:persistence-mysql.properties" })
-public class DemoAppConfig implements WebMvcConfigurer {
+public class DemoAppConfig {
 	@Autowired
 	private Environment env;
 	
